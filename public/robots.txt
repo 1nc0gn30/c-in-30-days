@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://c-in-30.nealfrazier.tech/sitemap.xml
