@@ -1,9 +1,9 @@
 <!-- xonettn -->
 <div align="center">
 
-# 📚 C In 30 Days
+# 📚 C in 30 Days
 
-A practical 30-day C programming course with daily exercises, guided projects,and fundamentals for modern systems programming.
+A practical, beginner-to-intermediate C programming course delivered through a modern interactive web interface.
 
 
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white)
@@ -13,60 +13,6 @@ A practical 30-day C programming course with daily exercises, guided projects,an
 </div>
 
 ---
-
-## 📋 Overview
-A practical 30-day C programming course with daily exercises, guided projects,and fundamentals for modern systems programming.
-
-## 📦 Tech Stack
-- React
-- Vite
-- Express
-
-## 🗂️ Project Structure
-```
-c-in-30-days/
-  - public
-  - src
-  (20 files total)
-```
-
-## 🚀 Getting Started
-
-### 📋 Prerequisites
-- Node.js (v18+)
-- npm or yarn
-
-### 📦 Installation
-```bash
-git clone https://github.com/1nc0gn30/c-in-30-days.git
-cd c-in-30-days
-npm install
-```
-
-### 💻 Development
-```bash
-npm run dev
-```
-
-### 🔨 Build
-```bash
-npm run build
-```
-
-### ⚙️ Available Scripts
-  npm run dev - vite --port=3000 --host=0.0.0.0
-  npm run build - vite build
-  npm run preview - vite preview
-  npm run clean - rm -rf dist
-  npm run lint - tsc --noEmit
-
-## 📂 Original README
-<details>
-<summary>Click to expand original README</summary>
-
-# C in 30 Days
-
-A practical, beginner-to-intermediate C programming course delivered through a modern interactive web interface.
 
 ## Snapshot
 - Canonical URL: `https://c-in-30.nealfrazier.tech/`
@@ -126,33 +72,6 @@ public/
 index.html
 vite.config.ts
 ```
-
-</details>
-
-## 📝 TODO / Roadmap
-- [ ] Add unit tests
-- [ ] Add LICENSE file
-- [ ] Add Dockerfile for containerized deployment
-- [ ] Add deployment configuration
-- [ ] Consider adding Tailwind CSS
-- [ ] Add CI/CD pipeline
-- [ ] Add contribution guidelines (CONTRIBUTING.md)
-- [ ] Improve error handling and edge cases
-- [ ] Add environment variable documentation
-- [ ] Update dependencies to latest versions
-- [ ] Add code comments and inline documentation
-
-## 🚀 Deployment
-This project can be deployed to Netlify, Vercel, or any static host.
-
-## 👤 Author
-**Neal Frazier** - [@AshAmplifies](https://github.com/1nc0gn30)
-
-## 🔗 Links
-- GitHub: https://github.com/1nc0gn30/c-in-30-days
-
----
-*This README was enhanced as part of the neals-projects-2026 batch update.*
 
 ---
 
