@@ -3,8 +3,8 @@
 A practical, beginner-to-intermediate C programming course delivered through a modern interactive web interface.
 
 ## Snapshot
-- Canonical URL: `https://c-in-30.nealfrazier.tech/`
-- Author: `Neal Frazier`
+- Canonical URL: `https://c-in-30.nullai.tech/`
+- Author: `1nc0gn30`
 - Stack: `React 19 + TypeScript + Vite 6 + Tailwind CSS 4`
 - Deployment target: `Netlify`
 
@@ -50,7 +50,7 @@ npm run preview
 - SPA fallback behavior is defined for Netlify deployment
 
 ## SEO Baseline
-- Canonical and social URLs point to: `https://c-in-30.nealfrazier.tech/`
+- Canonical and social URLs point to: `https://c-in-30.nullai.tech/`
 - `robots.txt` and `sitemap.xml` align to canonical host
 
 ## Project Layout
