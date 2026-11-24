@@ -1,18 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-body {
-  font-family: var(--font-sans);
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+
+  code, pre, kbd {
+    font-family: var(--font-mono);
+  }
 }
 
-.stretch-hover {
-  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+/* Crisp custom scrollbars for code & sidebar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
-.stretch-hover:active {
-  transform: scale(0.97);
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Markdown lesson typography (no @tailwindcss/typography dependency required) */
+.lesson-prose {
+  color: #1E293B;
+  line-height: 1.7;
+  font-size: 0.975rem;
+}
+
+.lesson-prose h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0F172A;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+  line-height: 1.25;
+}
+
+.lesson-prose > h1:first-child {
+  display: none;
+}
+
+.lesson-prose h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.lesson-prose h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #1E293B;
+  margin-top: 1.25rem;
+  margin-bottom: 0.45rem;
+}
+
+.lesson-prose p {
+  margin-bottom: 0.9rem;
+  max-width: 68ch;
+}
+
+.lesson-prose ul, .lesson-prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+  max-width: 68ch;
+}
+
+.lesson-prose ul {
+  list-style-type: disc;
+}
+
+.lesson-prose ol {
+  list-style-type: decimal;
+}
+
+.lesson-prose li {
+  margin-bottom: 0.4rem;
+}
+
+.lesson-prose strong {
+  color: #0F172A;
+  font-weight: 600;
+}
+
+.lesson-prose blockquote {
+  border-left: 3px solid #D97706;
+  background: #FFFBEB;
+  color: #78350F;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 1.15rem 0;
+  font-size: 0.92rem;
+}
+
+.lesson-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.lesson-prose code:not(pre code) {
+  background: #F1F5F9;
+  color: #B45309;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.85em;
+  border: 1px solid #E2E8F0;
+}
+
+/* Override Prism theme background to match obsidian editor */
+pre[class*="language-"],
+code[class*="language-"] {
+  text-shadow: none !important;
+}
+
+/* Ensure simple code editor textarea stays cleanly aligned */
+.c-code-editor textarea {
+  outline: none !important;
 }

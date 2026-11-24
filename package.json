@@ -1,14 +1,15 @@
 {
-  "name": "react-example",
+  "name": "c-in-30-days",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test": "node --import tsx --test tests/test_all.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",

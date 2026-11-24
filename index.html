@@ -3,21 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C in 30 Days | Learn C Programming with Daily Lessons</title>
-    <meta name="description" content="A practical 30-day C programming course with daily exercises, guided projects, and fundamentals for modern systems programming." />
-    <meta name="keywords" content="C programming, learn C, 30 days, coding course, systems programming, programming fundamentals" />
+    <title>C in 30 Days | Interactive C11 Systems Programming Course</title>
+    <meta name="description" content="A free, 100% open-access 30-day C11 programming workbench with daily lessons, quizzes, instant in-browser code verification, and an interactive stack/heap memory lab." />
+    <meta name="keywords" content="C programming, C11, learn C, 30 days, pointers, memory allocation, systems programming, coding exercises" />
     <meta name="author" content="Neal Frazier" />
     <link rel="canonical" href="https://c-in-30.nealfrazier.tech/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0B1120" />
+
+    <!-- OpenGraph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://c-in-30.nealfrazier.tech/" />
-    <meta property="og:title" content="C in 30 Days | Learn C Programming" />
-    <meta property="og:description" content="Build strong C programming fundamentals in 30 days with structured daily lessons." />
+    <meta property="og:title" content="C in 30 Days | Interactive C11 Systems Programming Course" />
+    <meta property="og:description" content="Master C11 in 30 structured days with built-in lessons, GCC-verified solutions, local code checks, and an interactive Stack/Heap Pointer Visualizer." />
+    <meta property="og:image" content="https://c-in-30.nealfrazier.tech/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="C in 30 Days — Interactive C11 Systems Programming Workbench" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@1nc0gn30" />
+    <meta name="twitter:creator" content="@1nc0gn30" />
     <meta name="twitter:url" content="https://c-in-30.nealfrazier.tech/" />
-    <meta name="twitter:title" content="C in 30 Days | Learn C Programming" />
-    <meta name="twitter:description" content="Build strong C programming fundamentals in 30 days with structured daily lessons." />
+    <meta name="twitter:title" content="C in 30 Days | Interactive C11 Systems Programming Course" />
+    <meta name="twitter:description" content="Master C11 in 30 structured days with built-in lessons, GCC-verified exercises, and an interactive Stack/Heap Pointer Visualizer." />
+    <meta name="twitter:image" content="https://c-in-30.nealfrazier.tech/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org AEO & SEO Graph -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "C in 30 Days",
+            "url": "https://c-in-30.nealfrazier.tech/",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web, Linux, macOS, Windows",
+            "description": "Free interactive 30-day C11 programming workbench featuring 30 complete lessons, multiple-choice quizzes, instant client-side C exercise checks, and a step-by-step Stack and Heap Memory Lab.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "creator": {
+              "@type": "Person",
+              "name": "Neal Frazier",
+              "alternateName": "1nc0gn30",
+              "url": "https://nealfrazier.tech"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Neal Frazier Tech",
+              "url": "https://nullai.tech"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do I need an account or API key to use C in 30 Days?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. All 30 lessons, quizzes, coding exercises, reference solutions, and the interactive Stack/Heap Memory Lab work completely offline in your browser with zero login or API key required. Adding a Gemini API key in Settings is strictly optional."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is my progress and code stored?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your completed days, study streak, quiz progress, and code drafts are stored locally in your browser's localStorage. You can export or import your progress as JSON at any time from Settings, with zero server tracking."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is C in 30 Days completely free, and how can I support it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, every day and lab is 100% free and open-access with no paywalls. If the course helps you, you can optionally support Neal Frazier Tech via the Stripe Buy Us a Coffee link or the Solana tip address in the footer."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
-  <body>
+  <body class="bg-[#F8FAFC] text-slate-900 antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

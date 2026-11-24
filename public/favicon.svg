@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="C in 30 Days Icon">
+  <rect width="64" height="64" rx="14" fill="#0B1120"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#D97706" stroke-width="2.5"/>
+  <text x="32" y="42" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="700" fill="#F8FAFC">C</text>
+  <circle cx="49" cy="17" r="4" fill="#F59E0B"/>
+</svg>
